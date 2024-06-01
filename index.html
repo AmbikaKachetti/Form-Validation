@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="sign_up_form"> <!-- onsubmit="handleSubmit()" with this we cannot handle preventSubmit-->
+            <div class="heading">
+                <h2 style="padding-bottom: 10px; text-align: center;">Sign Up</h2>
+            </div>
+            <div class="form_field">
+                <label for="fname">First Name</label>
+                <input type="text" placeholder="Enter First Name" id="fname">
+                <span id="fnameErrorMsg"></span>
+            </div>
+            <div class="form_field">
+                <label for="lname">Last Name</label>
+                <input type="text" placeholder="Enter Last Name" id="lname">
+                <span id="lnameErrorMsg"></span>
+            </div>
+            <div class="form_field">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter Email" id="email">
+                <span id="emailErrorMsg"></span>
+            </div>
+            <div class="form_field">
+                <label for="password">Password</label>
+                <input type="text" placeholder="Enter Passwrod" id="password">
+                <span id="passwordErrorMsg"></span>
+            </div>
+            <div class="form_field">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="text" placeholder="Confirm Password" id="confirmPassword">
+                <span id="confirmPasswordErrorMsg"></span>
+            </div>
+            <div class="form_action">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
